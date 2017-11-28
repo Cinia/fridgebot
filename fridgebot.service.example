@@ -1,0 +1,10 @@
+[Unit]
+Description=Fridge Alert Bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/techday/fridgebot
+ExecStart=/usr/bin/python3 %h/techday/fridgebot/AlertBot.py
+
+[Install]
+WantedBy=default.target
